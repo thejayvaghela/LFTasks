@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>
+            Sign Up
+        </title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td><label>Mobile No </label></td>
+                <td>: {{mobileNo}}</td>
+            </tr>
+            <tr>
+                <td><label>Your ID </label></td>
+                <td>: {{user.id}}</td>
+            </tr>
+            <tr>
+                <td><label>First Name </label></td>
+                <td>: {{user.first_name}}</td>
+            </tr>
+            <tr>
+                <td><label>Last Name </label></td>
+                <td>: {{user.last_name}}</td>
+            </tr>
+            <tr>
+                <td><label>Address </label></td>
+                <td>: {{user.address}}</td>
+            </tr>
+            <tr>
+                <td><label>Are You Admin </label></td>
+                <td>: {{user.is_admin}}</td>
+            </tr>
+            <tr>
+                <td><label>Are You Staff </label></td>
+                <td>: {{user.is_staff}}</td>
+            </tr>
+            <tr>
+                <td><label>Are You Superuser </label></td>
+                <td>: {{user.is_superuser}}</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="window.location.href='/logout/';">Logout</button></td>
+            </tr>
+        </table>
+    </body>
+</html>

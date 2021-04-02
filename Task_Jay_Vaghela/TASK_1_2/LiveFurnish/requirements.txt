@@ -1,0 +1,4 @@
+Django==3.1.5
+django-phonenumber-field[phonenumbers]
+djangorestframework
+mysql

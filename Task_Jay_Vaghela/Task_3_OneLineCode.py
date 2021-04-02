@@ -1,0 +1,1 @@
+print(' '.join(reversed("Me And You".split(' '))))

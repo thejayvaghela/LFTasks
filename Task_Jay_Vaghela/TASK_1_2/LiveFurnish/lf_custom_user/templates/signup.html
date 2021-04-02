@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>
+            Sign Up
+        </title>
+    </head>
+    <body>
+        
+        <form method="POST" action="/signup/">
+        {% csrf_token %}
+            <table>
+                <p>REGISTER FROM HERE</p>
+                <tr>
+                    <td><label>Mobile No </label></td>
+                    <td>: <input type="text" name="mobileNo"></td>
+                </tr>
+                <tr>
+                    <td><label>First Name </label></td>
+                    <td>: <input type="text" name="first_name"></td>
+                </tr>
+                <tr>
+                    <td><label>Last Name </label></td>
+                    <td>: <input type="text" name="last_name"></td>
+                </tr>
+                <tr>
+                    <td><label>Address </label></td>
+                    <td>: <input type="text" name="address"></td>
+                </tr>
+                <tr>
+                    <td><label>Password </label></td>
+                    <td>: <input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td><input type="Submit" value="Register"></td>
+                </tr>
+            </table>
+        </form>
+        {% if message %}
+            <p style="background-color:yellow; width:100px;">
+                {{message}}
+            </p>
+        {% endif %}
+        
+
+        <form method="POST" action="/login/">
+        {% csrf_token %}        
+            <table>
+                <p>LOGIN FROM HERE</p>
+                <tr>
+                    <td><label>Mobile No </label></td>
+                    <td>: <input type="text" name="mobileNo"></td>
+                </tr>
+                <tr>
+                    <td><label>Password </label></td>
+                    <td>: <input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td><input type="Submit" value="Login"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
